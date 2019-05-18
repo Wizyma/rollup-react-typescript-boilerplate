@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component should render should match  with custom prop 1`] = `
+<h1>
+  Other Title
+</h1>
+`;
+
+exports[`Component should render should match  with default props 1`] = `
+<h1>
+  Dummy Component!
+</h1>
+`;

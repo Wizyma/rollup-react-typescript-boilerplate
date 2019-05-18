@@ -1,0 +1,96 @@
+{
+  "name": "rollup-react-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "Rollup monorepo react typescript boilerplate",
+  "scripts": {
+    "bootstrap": "lerna bootstrap --concurrency 1",
+    "build": "lerna run build",
+    "commit": "git-cz",
+    "format": "lerna run format",
+    "test:watch": "jest --watch",
+    "test": "jest --detectOpenHandles --coverage --coverageReporters cobertura --coverageReporters lcov --watchAll=false",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wizyma/rollup-react-typescript-boilerplate.git"
+  },
+  "keywords": [
+    "React",
+    "Typescript",
+    "Rollup",
+    "Storybook",
+    "Jest"
+  ],
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "André Gomes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wizyma/rollup-react-typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Wizyma/rollup-react-typescript-boilerplate#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/register": "^7.4.4",
+    "@babel/runtime": "^7.4.4",
+    "@babel/types": "^7.4.4",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "@types/babel__core": "^7.1.2",
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.2",
+    "@types/prop-types": "^15.7.1",
+    "@types/react": "^16.8.17",
+    "@types/react-test-renderer": "^16.8.1",
+    "babel-loader": "^8.0.6",
+    "git-cz": "^3.0.1",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
+    "lerna": "^3.14.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "react": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "rollup": "^1.12.2",
+    "rollup-plugin-analyzer": "^3.0.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-filesize": "^6.0.1",
+    "rollup-plugin-includepaths": "^0.2.3",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.21.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "dependencies": {
+    "@storybook/addon-info": "^5.0.11",
+    "@types/storybook__react": "^4.0.1",
+    "awesome-typescript-loader": "^5.2.1"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{ts,tsx}": [
+        "git add"
+      ]
+    }
+  }
+}
